@@ -7,5 +7,5 @@ def pretty_print_xml(xml='')
   puts doc.to_xml(:indent => 2)
 end
 
-xml = File.read('source.xml')
+xml = File.read(ARGV[0])
 puts pretty_print_xml(xml)
