@@ -1,5 +1,5 @@
 repo_path = ARGV[0]
-important_branches = %{master develop}
+important_branches = %{master main develop}
 
 def get_branches
   branches = `git branch`.split("\n")
