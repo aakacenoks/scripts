@@ -3,8 +3,7 @@ important_branches = %{master main develop}
 
 def get_branches
   branches = `git branch`.split("\n")
-  branches.map { |branch| branch = branch.tr!('^a-zA-Z0-9-_', '') }
-  branches
+  branches.map { |branch| branch = branch.tr!('^a-zA-Z0-9-_/.', '') }
 end
 
 def run(path, important_branches)
